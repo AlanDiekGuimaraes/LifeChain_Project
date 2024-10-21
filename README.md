@@ -3,13 +3,14 @@
 
 Este projeto tem como objetivo criar uma blockchain simples em Python focada na gestão de dados médicos de um paciente diabético. A blockchain armazena de forma segura e imutável os resultados de exames de sangue do paciente, como níveis de glicose e colesterol, em blocos que formam uma cadeia. Cada bloco está conectado ao anterior por meio de uma estrutura de hash, garantindo a integridade dos dados. O projeto aborda os conceitos fundamentais da blockchain, como prova de trabalho (Proof of Work), validação da cadeia, contratos inteligentes (para verificação de condições), e armazenamento de blocos em um arquivo JSON.
 
+Link do mapa mental do projeto: https://www.canva.com/design/DAGT3z3lTeU/cIvC3tICvALsGkTo2OVP-Q/view?utm_content=DAGT3z3lTeU&utm_campaign=designshare&utm_medium=link&utm_source=editor
+
 Contexto
 Em um ambiente de saúde, a necessidade de manter os dados do paciente seguros e imutáveis é fundamental, especialmente em condições crônicas como o diabetes, onde o monitoramento contínuo dos níveis de glicose é crucial. Utilizar a blockchain para esse fim proporciona uma solução de armazenamento seguro, transparente e rastreável. A imutabilidade dos dados garante que os resultados de exames não possam ser alterados ou manipulados, o que é essencial para garantir a confiabilidade do histórico médico.
 
 Componentes do Projeto
-Blocos e Blockchain:
-
 Bloco: Cada bloco armazena os dados de um exame de sangue, como níveis de glicose e colesterol, juntamente com o índice do bloco, timestamp, hash anterior, nonce (usado na prova de trabalho) e hash atual.
+
 Blockchain: A blockchain é uma cadeia de blocos conectados de forma criptograficamente segura. Ela garante que qualquer modificação em um bloco invalida toda a cadeia, tornando a manipulação de dados praticamente impossível.
 Prova de Trabalho (Proof of Work):
 
@@ -38,33 +39,29 @@ Validação da Blockchain:
 
 A cada novo bloco inserido, a cadeia inteira é verificada para garantir que ela permaneça íntegra e válida.
 A validação ocorre verificando tanto os hashes quanto a conexão com o bloco anterior.
-Armazenamento e Persistência:
 
+Armazenamento e Persistência:
 Após a validação, a blockchain é salva no arquivo blockchain.json, permitindo que todos os blocos sejam persistidos em disco.
 Esse arquivo pode ser compartilhado, copiado e visualizado por outros sistemas.
 Contratos Inteligentes Simples
 Neste projeto, os contratos inteligentes são utilizados para fazer verificações automáticas nos dados inseridos. Um exemplo de contrato poderia ser:
 
-Verificar Níveis de Glicose: Se o nível de glicose no exame for maior que um valor crítico (exemplo: 200 mg/dL), o sistema pode emitir um alerta para o médico ou o paciente.
-Este tipo de verificação pode ser expandido para incluir qualquer métrica médica relevante, como níveis de colesterol ou pressão arterial, dependendo da necessidade.
-
-Tecnologias Utilizadas
+Tecnologias Utilizadas:
 Python 3.x: Para a implementação de toda a lógica da blockchain e dos blocos.
 Hashlib: Para calcular os hashes criptográficos necessários para a prova de trabalho e a segurança da blockchain.
 JSON: Para armazenar a blockchain em um formato persistente, estruturado e legível por humanos.
 Bibliotecas padrão do Python: Como time para gerar timestamps e json para manipular arquivos JSON.
 
-Testando o Projeto
 Execução do Código:
 
 Ao executar o código, o sistema irá criar a blockchain com o bloco gênesis.
 O aluno será solicitado a inserir os dados do exame de sangue, como glicose e colesterol.
+
 Adição de Blocos:
-
 Após a inserção dos dados, um novo bloco será gerado e adicionado à blockchain, passando pelo processo de prova de trabalho.
+
 Validação da Cadeia:
-
 A blockchain será validada, garantindo que todos os blocos estejam corretamente vinculados e seguros.
-Armazenamento em JSON:
 
+Armazenamento em JSON:
 A blockchain será salva em um arquivo JSON (blockchain.json), que pode ser visualizado para conferir os dados do paciente e verificar a integridade da cadeia.
