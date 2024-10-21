@@ -3,8 +3,6 @@
 
 Este projeto tem como objetivo criar uma blockchain simples em Python focada na gestão de dados médicos de um paciente diabético. A blockchain armazena de forma segura e imutável os resultados de exames de sangue do paciente, como níveis de glicose e colesterol, em blocos que formam uma cadeia. Cada bloco está conectado ao anterior por meio de uma estrutura de hash, garantindo a integridade dos dados. O projeto aborda os conceitos fundamentais da blockchain, como prova de trabalho (Proof of Work), validação da cadeia, contratos inteligentes (para verificação de condições), e armazenamento de blocos em um arquivo JSON.
 
-Link do mapa mental do projeto: https://www.canva.com/design/DAGT3z3lTeU/cIvC3tICvALsGkTo2OVP-Q/view?utm_content=DAGT3z3lTeU&utm_campaign=designshare&utm_medium=link&utm_source=editor
-
 Contexto
 Em um ambiente de saúde, a necessidade de manter os dados do paciente seguros e imutáveis é fundamental, especialmente em condições crônicas como o diabetes, onde o monitoramento contínuo dos níveis de glicose é crucial. Utilizar a blockchain para esse fim proporciona uma solução de armazenamento seguro, transparente e rastreável. A imutabilidade dos dados garante que os resultados de exames não possam ser alterados ou manipulados, o que é essencial para garantir a confiabilidade do histórico médico.
 
